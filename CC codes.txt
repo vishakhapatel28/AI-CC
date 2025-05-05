@@ -1,0 +1,54 @@
+# FactorialCalculator
+public class FactorialCalculator {
+    public static void calculateFactorial(Integer n) {
+        Integer factorial = 1;
+        for (Integer i = 1; i <= n; i++) {
+            factorial *= i;
+        }
+        System.debug('Factorial of ' + n + ' is: ' + factorial);
+    }
+}
+
+// Call in Anonymous Window:
+FactorialCalculator.calculateFactorial(5);
+
+
+#FibonacciGenerator
+public class FibonacciGenerator {
+    public static void generateFibonacci(Integer n) {
+        Integer a = 0;
+        Integer b = 1;
+        Integer c;
+
+        System.debug('Fibonacci Series:');
+        System.debug(a);
+        System.debug(b);
+
+        for (Integer i = 2; i < n; i++) {
+            c = a + b;
+            System.debug(c);
+            a = b;
+            b = c;
+        }
+    }
+}
+
+// Call in Anonymous Window:
+FibonacciGenerator.generateFibonacci(10);
+
+
+#SumOfNumbers
+public class SumOfNumbers {
+    public static void calculateSum(Integer n) {
+        Integer sum = 0;
+        for (Integer i = 1; i <= n; i++) {
+            sum += i;
+        }
+        System.debug('Sum of first ' + n + ' natural numbers: ' + sum);
+    }
+}
+
+// Call in Anonymous Window:
+SumOfNumbers.calculateSum(10);
+
+
